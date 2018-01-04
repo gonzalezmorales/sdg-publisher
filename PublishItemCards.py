@@ -6,8 +6,10 @@ import urllib.request as urlopen
 import urllib.request as request
 from datetime import datetime
 
-online_username = "tbutcher_undesa"
-gis_online_connection = GIS("http://undesa.maps.arcgis.com", online_username, "***REMOVED***")
+online_username = ""
+online_password = ""
+online_connection = ""
+gis_online_connection = GIS(online_connection, online_username, online_password)
 
 def getMetadata(metadata_key,value):
     try:
